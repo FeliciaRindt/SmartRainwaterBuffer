@@ -1,0 +1,239 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  font-family: DINPro; !important
+}
+
+/*
+ * Dashboard style municipality
+ */
+
+.a .navbar-brand {
+    color: #2a3f54;
+}
+
+.leaflet-control-attribution leaflet-control {
+    display: none;
+}
+
+.h3, h3 {
+    background: #1abb9c;
+    color: #2a3f54;
+    padding: 5px;
+    margin: 10px;
+    /*margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;*/
+}
+
+.h4, h4 {
+    margin-left: 10px;
+}
+
+.h3, h3 {
+    margin: 0px;
+}
+
+.whitebox {
+    background: #fff;
+    margin: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    /*box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: solid;
+    border-width: 10px 10px 10px 5px;
+    border-color: #ededed;*/
+
+    -webkit-box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+}
+
+button {
+    outline: none;
+}
+
+.col-md-8 {
+    width: 62%;
+    margin-right: 5px;
+}
+
+.col-md-6 {
+    width: 47.7%;
+    margin-right: 5px;
+}
+
+.row {
+    margin-left: 0px;
+}
+
+.navbar navbar-inverse navbar-fixed-top {
+    background-color: #1abb9c;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 23px -16px rgba(0,0,0,0.75);
+}
+
+#mapid { 
+    height: 250px; 
+    width: 250px;
+}
+
+#status {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 12pt;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the map polygons */
+
+/*.d3_style {
+    stroke: white;
+    stroke-width: 1;
+    fill-opacity: 0.8;
+    fill: #b0c4dd;
+}*/
+
+.d3_style:hover {
+    fill: #4f81bd;
+}
+
+.leaflet-tooltip {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    font-family: DINPro;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*
+ * Axes D3
+ */
+.axis text {
+  font-family: DINPro;
+  font-size: 10pt;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/*
+ * Fonts
+ */
+
+@font-face {
+    font-family: DINPro;
+    src: url(../fonts/dinpro-regular.otf);
+    
+}

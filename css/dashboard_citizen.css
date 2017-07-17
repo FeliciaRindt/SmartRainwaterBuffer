@@ -1,0 +1,39 @@
+/*  Bachelor Project Creative Technology by Felicia Rindt 
+Dashboard css styles for a smart rainwater buffering system interface. */
+        
+
+.citizen_navbar {
+    background-color: #5795b9;
+}
+
+.h3, h3 {
+    background-color: transparent;
+}
+
+/* set the CSS for D3 */
+
+.line {
+  stroke: #5795b9;
+}
+
+.area {
+  fill: #5795b9;
+}
+
+.dot {
+  fill: #58585a;
+}
+
+.dot:hover {
+  fill: lightgrey;
+}
+
+/*Rectangle bar class styling*/
+
+.bar {
+    fill: #5795b9;
+}
+
+.bar:hover {
+    fill: #5795b9;
+}

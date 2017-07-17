@@ -1,0 +1,141 @@
+/*  Bachelor Project Creative Technology by Felicia Rindt 
+    D3 css styles for a smart rainwater buffering system interface. */
+            
+
+.line {
+  fill: none;
+  stroke: #4f81bd;
+  stroke-width: 2px;
+}
+
+.area {
+  fill: #b0c4dd;
+}
+
+.dot {
+  fill: #4f81bd;
+}
+
+.dot:hover {
+  fill: #2a3f54;
+}
+
+.axis--x path {
+  display: none;
+}
+
+/*Rectangle bar class styling*/
+
+.bar {
+    fill: #4f81bd;
+}
+
+.bar:hover {
+    fill: #b0c4dd;
+}
+
+/*Text class styling*/
+
+.text {
+    font-family: DINPro;
+}
+
+/*Tooltip style*/
+
+.toolTip, .toolTip2, .toolTipPie, .toolTipBuffer, .toolTipPrediction {
+  background: grey;
+    color: white;
+    display: none;
+    font-size: 14px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+.toolTip:after, .toolTipPie:after, .toolTipBuffer:after, .toolTipPrediction:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1;
+    color: grey;
+    content: "\25BC";
+    position: absolute;
+    text-align: left;
+    left: 45%;
+    top: 58px;
+}
+
+.toolTipPie:after {
+    top: 78px;
+}
+
+.toolTipBuffer:after {
+    top: 57px;
+}
+
+.toolTipPrediction:after {
+    top: 77px;
+}
+
+.toolTip2 {
+    background: #345972;
+}
+    
+.toolTip2:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 12px;
+    width: 100%;
+    line-height: 1;
+    color: #345972;
+    content: "\25BC";
+    position: absolute;
+    text-align: left;
+    left: -67px;
+    top: 80px;
+    transform: rotate(90deg);   
+}  
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+#chart {                                                          
+       margin-top: 50px;                                                                                             */
+      } 
+
+.legend {
+    font-family: DINPro;
+    font-size: 10pt;
+}
+.rect {
+    stroke-width: 2;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
